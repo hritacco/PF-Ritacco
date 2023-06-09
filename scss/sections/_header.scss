@@ -1,0 +1,27 @@
+.header__index{
+    .placa1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        object-fit: cover;
+        @include mobile {
+            display: none;
+        }
+            .logo{
+                width: 200px;
+            }
+    }
+    .placa1__mobile{
+        display: none;
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            .logo__mobile{
+                width: 100px;
+            }
+        }
+    }
+}
+
